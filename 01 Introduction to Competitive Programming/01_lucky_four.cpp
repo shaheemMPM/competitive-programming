@@ -2,10 +2,13 @@
 using namespace std;
 
 int main() {
+  std::ios_base::sync_with_stdio(false);
+  std::cin.tie(NULL);
+
   int T;
   cin>>T;
 
-  for(int i = 0; i < T; i++) {
+  while(T--) {
     int num;
     cin>>num;
     int countOfFour = 0;
@@ -15,7 +18,7 @@ int main() {
       }
       num /= 10;
     }
-    cout<<countOfFour<<endl;
+    cout<<countOfFour<<"\n";
   }
 
   return 0;
